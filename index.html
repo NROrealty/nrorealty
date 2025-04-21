@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NRO Realty</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Promo Popup -->
+    <div class="promo-popup" id="promoPopup">
+        <div class="promo-content">
+            <span class="close-promo">&times;</span>
+            <div class="promo-left">
+                <img src="images/promo-banner.jpg" alt="Promo Banner" class="promo-banner">
+            </div>
+            <div class="promo-right">
+                <h2>Dapatkan Promo Hanya Booking 1 Juta!</h2>
+                <p>Isi formulir di bawah ini untuk informasi promo dan kami akan segera menghubungi anda kembali.</p>
+                <form id="promoForm">
+                    <div class="form-group">
+                        <input type="text" id="promoName" placeholder=" " required>
+                        <label for="promoName">Nama Lengkap</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="promoEmail" placeholder=" " required>
+                        <label for="promoEmail">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="promoPhone" placeholder=" " required>
+                        <label for="promoPhone">No Handphone</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Dapatkan Segera</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/Logo-NRO.png" alt="NRO Realty Logo">
+                <div class="logo-text">
+                    <span class="company-name">NIAGA RAYA</span>
+                    <span class="company-subname">OPTIMA</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#facilities">Fasilitas</a></li>
+                <li><a href="#news">Berita</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#booking" class="btn-booking">Booking Online</a></li>
+                <li class="theme-switch">
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch-label" for="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <div class="slider round">
+                                <i class="fas fa-sun"></i>
+                                <i class="fas fa-moon"></i>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Raih Rumah Impian</h1>
+            <p>Rasakan perpaduan sempurna antara kenyamanan, gaya, dan kecanggihan dalam proyek perumahan premium kami</p>
+            <a href="#booking" class="cta-button">Temukan Rumah Impian Anda</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>PT. NIAGA RAYA OPTIMA adalah perusahaan yang berbadan hukum Perseroan Terbatas (PT) dan secara aktif turut mendukung kebijakan Pemerintah Pusat dalam Program Pembangunan Perumahan. Kami berkomitmen untuk berperan serta dalam menghadirkan solusi hunian yang layak, berkualitas, dan berkelanjutan. Melalui berbagai proyek perumahan, kami berupaya memberikan dampak positif bagi peningkatan kualitas hidup masyarakat dan mendukung pertumbuhan lingkungan permukiman yang lebih baik.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tentang Niaga Raya Optima">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Proyek Kami</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="images/project3.jpg" alt="Apartemen Mewah">
+                    <h3>Apartemen Mewah</h3>
+                    <p>Ruang hidup yang luas dengan finishing premium dan pemandangan menakjubkan</p>
+                    <a href="#" class="btn-detail" data-project="apartment">Lihat Detail</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1453&q=80" alt="Townhouse Modern">
+                    <h3>Townhouse Modern</h3>
+                    <p>Desain kontemporer dengan taman pribadi dan fasilitas modern</p>
+                    <a href="#" class="btn-detail" data-project="townhouse">Lihat Detail</a>
+                </div>
+                <div class="project-card">
+                    <img src="images/project2.jpg" alt="Suite Eksekutif">
+                    <h3>Suite Eksekutif</h3>
+                    <p>Ruang hidup elegan yang sempurna untuk profesional dan keluarga kecil</p>
+                    <a href="#" class="btn-detail" data-project="suite">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <button class="close-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="modal-gallery">
+                <div class="gallery-main">
+                    <img src="" alt="Main project image" id="modalMainImage">
+                </div>
+                <div class="gallery-thumb">
+                    <img src="" alt="Project image 1" id="modalThumb1">
+                </div>
+                <div class="gallery-thumb">
+                    <img src="" alt="Project image 2" id="modalThumb2">
+                </div>
+                <div class="gallery-thumb">
+                    <img src="" alt="Project image 3" id="modalThumb3">
+                </div>
+            </div>
+
+            <p id="modalDescription" class="mb-4"></p>
+
+            <div class="modal-details">
+                <div class="detail-section">
+                    <h3>Spesifikasi</h3>
+                    <ul class="amenities-list" id="modalSpecs"></ul>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>Fasilitas</h3>
+                    <ul class="amenities-list" id="modalFacilities"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities">
+        <div class="container">
+            <h2>Fasilitas Kami</h2>
+            <div class="facilities-grid">
+                <div class="facility-item">
+                    <i class="fas fa-swimming-pool"></i>
+                    <h3>Kolam Renang</h3>
+                    <p>Kolam renang infinity mewah dengan pemandangan menakjubkan</p>
+                </div>
+                <div class="facility-item">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Pusat Kebugaran</h3>
+                    <p>Peralatan gym canggih dan pelatihan pribadi</p>
+                </div>
+                <div class="facility-item">
+                    <i class="fas fa-tree"></i>
+                    <h3>Area Hijau</h3>
+                    <p>Taman yang indah dan jalur pejalan kaki</p>
+                </div>
+                <div class="facility-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Keamanan 24/7</h3>
+                    <p>Sistem keamanan canggih dan staf profesional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news">
+        <div class="container">
+            <h2>Berita Terbaru</h2>
+            <div class="news-grid">
+                <div class="news-card" data-news-id="grand-opening">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Grand Opening">
+                    <h3>Perayaan Grand Opening</h3>
+                    <p>Bergabunglah dengan kami dalam grand opening pengembangan mewah baru kami</p>
+                </div>
+                <div class="news-card" data-news-id="promotion">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1453&q=80" alt="Promosi Khusus">
+                    <h3>Promosi Khusus</h3>
+                    <p>Penawaran terbatas untuk unit pilihan - jangan sampai ketinggalan!</p>
+                </div>
+                <div class="news-card" data-news-id="community">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Acara Komunitas">
+                    <h3>Acara Komunitas</h3>
+                    <p>Acara dan kegiatan mendatang untuk penghuni kami</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Detail Modal -->
+    <div class="modal" id="newsModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalNewsImage" src="" alt="News Image">
+                </div>
+                <div class="modal-details">
+                    <h2 id="modalNewsTitle" class="modal-title"></h2>
+                    <p id="modalNewsDate" class="modal-date"></p>
+                    <p id="modalNewsDescription" class="modal-description"></p>
+                    <div id="modalNewsContent" class="modal-content-text"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Alamat</h3>
+                            <p>Jln AMD Cibentang, Kabupaten Bogor</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telepon</h3>
+                            <p>+62 123 456 7890</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@niagarayaoptima.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder=" ">
+                            <label for="name">Nama Lengkap</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder=" ">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder=" ">
+                            <label for="subject">Subjek</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder=" "></textarea>
+                            <label for="message">Pesan Anda</label>
+                        </div>
+                        <button type="submit" class="submit-btn">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="booking-form">
+                <h2>Booking Rumah Impian Anda</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="text" id="booking-name" placeholder=" ">
+                        <label for="booking-name">Nama Lengkap</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="booking-email" placeholder=" ">
+                        <label for="booking-email">Alamat Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="booking-phone" placeholder=" ">
+                        <label for="booking-phone">Nomor Telepon</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="booking-type" required>
+                            <option value="" disabled selected></option>
+                            <option value="apartment">Apartemen Mewah</option>
+                            <option value="townhouse">Townhouse Modern</option>
+                            <option value="suite">Suite Eksekutif</option>
+                        </select>
+                        <label for="booking-type">Tipe Properti</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="booking-date" placeholder=" ">
+                        <label for="booking-date">Tanggal Kunjungan yang Diinginkan</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Jadwalkan Kunjungan</button>
+                </form>
+                <div class="booking-success">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Terima Kasih!</h3>
+                    <p>Permintaan booking Anda telah diterima. Tim kami akan segera menghubungi Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Niaga Raya Optima</h3>
+                    <p>Mendefinisikan ulang hidup mewah dengan kualitas dan layanan yang luar biasa</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Tautan Cepat</h3>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#projects">Proyek</a></li>
+                        <li><a href="#facilities">Fasilitas</a></li>
+                        <li><a href="#news">Berita</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Terhubung Dengan Kami</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Niaga Raya Optima. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
